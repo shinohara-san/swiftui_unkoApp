@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,16 @@
 		95AEB8E9241DEA7900559F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95AEB8E8241DEA7900559F63 /* Assets.xcassets */; };
 		95AEB8EC241DEA7A00559F63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95AEB8EB241DEA7A00559F63 /* Preview Assets.xcassets */; };
 		95AEB8EF241DEA7A00559F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95AEB8ED241DEA7A00559F63 /* LaunchScreen.storyboard */; };
+		95AEB8F7241E02CD00559F63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95AEB8F6241E02CD00559F63 /* GoogleService-Info.plist */; };
+		95AEB8F9241E07D700559F63 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AEB8F8241E07D700559F63 /* ResultViewModel.swift */; };
+		95AEB8FB241E0B6000559F63 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AEB8FA241E0B6000559F63 /* ResultView.swift */; };
+		95AEB8FD241E129D00559F63 /* ResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AEB8FC241E129D00559F63 /* ResultRow.swift */; };
+		DDA55D3A096C8235CBE5FA51 /* Pods_01unkoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EF997F5BDA72D3F4027810 /* Pods_01unkoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26EF997F5BDA72D3F4027810 /* Pods_01unkoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_01unkoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D92B5269758385C4804A2C /* Pods-01unkoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01unkoApp.debug.xcconfig"; path = "Target Support Files/Pods-01unkoApp/Pods-01unkoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		95AEB8DF241DEA7700559F63 /* 01unkoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01unkoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AEB8E2241DEA7700559F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95AEB8E4241DEA7700559F63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		95AEB8EB241DEA7A00559F63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95AEB8EE241DEA7A00559F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95AEB8F0241DEA7A00559F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95AEB8F6241E02CD00559F63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95AEB8F8241E07D700559F63 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		95AEB8FA241E0B6000559F63 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		95AEB8FC241E129D00559F63 /* ResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRow.swift; sourceTree = "<group>"; };
+		EE86690D17917750B8AA2EC2 /* Pods-01unkoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01unkoApp.release.xcconfig"; path = "Target Support Files/Pods-01unkoApp/Pods-01unkoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA55D3A096C8235CBE5FA51 /* Pods_01unkoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				95AEB8E1241DEA7700559F63 /* 01unkoApp */,
 				95AEB8E0241DEA7700559F63 /* Products */,
+				E42E7E51F0D10D5EDD3436FB /* Pods */,
+				B7F5D6711E04C4AC4B2BEB1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +73,13 @@
 			children = (
 				95AEB8E2241DEA7700559F63 /* AppDelegate.swift */,
 				95AEB8E4241DEA7700559F63 /* SceneDelegate.swift */,
+				95AEB8FA241E0B6000559F63 /* ResultView.swift */,
+				95AEB8FC241E129D00559F63 /* ResultRow.swift */,
+				95AEB8F8241E07D700559F63 /* ResultViewModel.swift */,
 				95AEB8E6241DEA7700559F63 /* ContentView.swift */,
 				95AEB8E8241DEA7900559F63 /* Assets.xcassets */,
 				95AEB8ED241DEA7A00559F63 /* LaunchScreen.storyboard */,
+				95AEB8F6241E02CD00559F63 /* GoogleService-Info.plist */,
 				95AEB8F0241DEA7A00559F63 /* Info.plist */,
 				95AEB8EA241DEA7A00559F63 /* Preview Content */,
 			);
@@ -75,6 +94,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B7F5D6711E04C4AC4B2BEB1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26EF997F5BDA72D3F4027810 /* Pods_01unkoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E42E7E51F0D10D5EDD3436FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36D92B5269758385C4804A2C /* Pods-01unkoApp.debug.xcconfig */,
+				EE86690D17917750B8AA2EC2 /* Pods-01unkoApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95AEB8F3241DEA7A00559F63 /* Build configuration list for PBXNativeTarget "01unkoApp" */;
 			buildPhases = (
+				12EE6E8CB40AC5642A69E8F7 /* [CP] Check Pods Manifest.lock */,
 				95AEB8DB241DEA7700559F63 /* Sources */,
 				95AEB8DC241DEA7700559F63 /* Frameworks */,
 				95AEB8DD241DEA7700559F63 /* Resources */,
+				B7D0C735C865ECCBF87F7D09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +172,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AEB8EF241DEA7A00559F63 /* LaunchScreen.storyboard in Resources */,
+				95AEB8F7241E02CD00559F63 /* GoogleService-Info.plist in Resources */,
 				95AEB8EC241DEA7A00559F63 /* Preview Assets.xcassets in Resources */,
 				95AEB8E9241DEA7900559F63 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12EE6E8CB40AC5642A69E8F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-01unkoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D0C735C865ECCBF87F7D09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-01unkoApp/Pods-01unkoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-01unkoApp/Pods-01unkoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-01unkoApp/Pods-01unkoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95AEB8DB241DEA7700559F63 /* Sources */ = {
@@ -148,7 +229,10 @@
 			files = (
 				95AEB8E3241DEA7700559F63 /* AppDelegate.swift in Sources */,
 				95AEB8E5241DEA7700559F63 /* SceneDelegate.swift in Sources */,
+				95AEB8FB241E0B6000559F63 /* ResultView.swift in Sources */,
 				95AEB8E7241DEA7700559F63 /* ContentView.swift in Sources */,
+				95AEB8F9241E07D700559F63 /* ResultViewModel.swift in Sources */,
+				95AEB8FD241E129D00559F63 /* ResultRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +366,7 @@
 		};
 		95AEB8F4241DEA7A00559F63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D92B5269758385C4804A2C /* Pods-01unkoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +387,7 @@
 		};
 		95AEB8F5241DEA7A00559F63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE86690D17917750B8AA2EC2 /* Pods-01unkoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

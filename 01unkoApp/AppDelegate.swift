@@ -1,12 +1,5 @@
-//
-//  AppDelegate.swift
-//  01unkoApp
-//
-//  Created by Yuki Shinohara on 2020/03/15.
-//  Copyright © 2020 Yuki Shinohara. All rights reserved.
-//
-
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
